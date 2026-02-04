@@ -1,0 +1,64 @@
+/*
+ reset.css
+ Inspirado no "Modern CSS Reset" de Andy Bell
+ https://andy-bell.co.uk/
+
+ Objetivo: fornecer uma base pequena, acessível e responsiva
+ para normalizar estilos entre navegadores.
+*/
+
+/* Box sizing ------------------------------ */
+:root { -moz-tab-size: 4; tab-size: 4; }
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Remove margins and set sensible defaults ----- */
+html, body, p, h1, h2, h3, h4, h5, h6, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Lists ------------------------------------ */
+ul, ol { list-style: none; margin: 0; padding: 0; }
+
+/* Links, images and media ------------------ */
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img, picture { max-width: 100%; display: block; }
+
+/* Form elements inherit font ---------------- */
+input, button, textarea, select { font: inherit; }
+button { background: transparent; border: none; padding: 0; cursor: pointer; }
+
+/* Accessibility: focus styles ---------------- */
+:focus {
+  outline: 2px dashed Highlight;
+  outline-offset: 3px;
+}
+
+/* Tables and fieldsets ---------------------- */
+table { border-collapse: collapse; }
+fieldset { border: 0; padding: 0; margin: 0; }
+
+/* Text helpers ------------------------------ */nsmall { font-size: 80%; }
+strong, b { font-weight: 600; }
+
+/* Media responsiveness ---------------------- */nimg, svg, video, canvas, audio, iframe { max-width: 100%; height: auto; }
+
+/* Reduce motion for those who prefer it ----- */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+
+/* Utility: prevent overflow caused by long words */
+html { overflow-x: hidden; }
+* { word-break: break-word; }
+
+/* End of reset */
