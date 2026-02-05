@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SyntaxWear - Ecommerce</title>
+  <title>SyntaxWear - Tênis e Sneakers Online</title>
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components/header.css">
 </head>
+
 <body>
   <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
 
   <!-- seção: header -->
-  <header class="site-header" role="banner">
-    <div class="container">
-      <a href="/" class="logo" aria-label="Logo SyntaxWear"></a>
-      <!-- seção: navegação principal -->
-      <nav class="main-nav" role="navigation" aria-label="Navegação principal">
-        <ul>
-          <li><a href="#categorias">Categorias</a></li>
-          <li><a href="#destaques">Destaques</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="header">
+    <!--Logo e Navegação-->
+    <h1 class="logo">
+      <a href="/" title="SyntaxWear - Tênis e Sneakers Online">
+        <img src="./images/logo/logo.svg.svg" alt="SyntaxWear - Tênis e Sneakers Online">
+      </a>
+    </h1>
+
+    <nav class="nav-center" aria-label="Categorias Principais">
+      <ul class="main-menu">
+        <li><a href="#">Masculino</a></li>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Outlet</a></li>
+      </ul>
+    </nav>
+
+    <nav class="nav-right" aria-label="Menu Secundário">
+      <ul class="secondary-menu">
+        <li><a href="#">Nossas lojas</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#" title="Minha Conta"><img src="./images/icons/user.svg.svg" alt="Minha Conta"></a></li>
+        <li><a href="#" title="Ajuda"><img src="./images/icons/help.svg.svg" alt="Ajuda"></a></li>
+        <li><a href="#" title="Carrinho"><img src="./images/icons/cart.svg.svg" alt="Carrinho"></a></li>
+      </ul>
+    </nav>
+
+
   </header>
 
   <main id="main-content" role="main">
@@ -47,4 +65,5 @@
     </div>
   </footer>
 </body>
+
 </html>
